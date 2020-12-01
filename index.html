@@ -32,8 +32,6 @@
                 { Class: "form-control", Name: "Surname", Title: "Surname"},
                 { Class: "form-control", Name: "Email", Title: "eMail Address", type: "email", required: true },
                 { Class: "form-control", Name: "Phone", Title: "Phone Number", type: "phone" },
-                { Class: "form-control", Name: "Birthday", Title: "Birthdate", type: "date" },
-                { Class: "form-control", Name: "Selection", Title: "Selection", type: "select", options: "lookup.json" }
             ],
             SubmitButton: { Class: "btn btn-primary", Name: "save", label: "Save Button" },
             onFormSubmit: function (data) {
@@ -43,7 +41,5 @@
         Show();
     });
 
-    function Show() {
-        Form.ShowForm({ Name: "John", Surname: "doe", Email: "john@doe.not.com", Phone: "8001234567", Birthday: "1969-01-01", Selection: 2 })
-    }
+   
 </script>
